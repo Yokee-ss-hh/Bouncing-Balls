@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Balls</title>
+    <style>
+     body{
+         position: relative;
+         display:flex;
+         align-items: center;
+         justify-content: center;
+     }
+     #container{
+        height:90%;
+        width:26%;
+        display:flex;
+        flex-wrap: nowrap;
+
+     }
+     .equal{
+        position: relative;
+        width:60px;
+        height:650px;
+        margin:10px;
+        border-radius:2px;
+        border-top:5px solid blueviolet;
+        border-bottom:5px solid blueviolet;
+     }
+     #one::before{
+         position:absolute;
+         content:"";
+         width:60px;
+         height:60px;
+         background-color:darkorange;
+         border-radius:50%;
+         animation:animate-one 2s linear infinite;
+     }
+     #two::before{
+         position:absolute;
+         content:"";
+         width:60px;
+         height:60px;
+         background-color: darkorange;
+         border-radius:50%;
+         animation:animate-two 3s linear infinite;
+     }
+     #three::before{
+         position:absolute;
+         content:"";
+         width:60px;
+         height:60px;
+         background-color: darkorange;
+         border-radius:50%;
+         animation:animate-three 3.5s linear infinite;
+     }
+     #four::before{
+         position:absolute;
+         content:"";
+         width:60px;
+         height:60px;
+         background-color: darkorange;
+         border-radius:50%;
+         animation:animate-four 5s linear infinite;
+     }
+     #five::before{
+         position:absolute;
+         content:"";
+         width:60px;
+         height:60px;
+         background-color: darkorange;
+         border-radius:50%;
+         animation:animate-five 6s linear infinite;
+     }
+     @keyframes animate-one {
+         0%{
+             top:0px;
+         }
+         50%{
+             top:590px;
+         }
+         100%{
+             top:0px;
+         }
+     }
+     @keyframes animate-two {
+         0%{
+             top:0px;
+         }
+         50%{
+             top:625px;
+         }
+         100%{
+             top:0px;
+         }
+     }
+     @keyframes animate-three {
+         0%{
+             top:0px;
+         }
+         50%{
+             top:625px;
+         }
+         100%{
+             top:0px;
+         }
+     }
+     @keyframes animate-four {
+         0%{
+             top:0px;
+         }
+         50%{
+             top:625px;
+         }
+         100%{
+             top:0px;
+         }
+     }
+     @keyframes animate-five {
+         0%{
+             top:0px;
+         }
+         50%{
+             top:625px;
+         }
+         100%{
+             top:0px;
+         }
+     }
+    </style>
+</head>
+<body>
+  <div id="container">
+  <div id="one" class="equal"></div>
+  <div id="two" class="equal"></div>
+  <div id="three" class="equal"></div>
+  <div id="four" class="equal"></div>
+  <div id="five" class="equal"></div>
+  </div>
+</body>
+</html>
